@@ -4,7 +4,9 @@ import './Card.css'
 
 const Card = () => {
   return (
-    <h3>Card!</h3>
+    <div className='card'>
+      <h3>Card!</h3>
+    </div>
   )
 }
 
