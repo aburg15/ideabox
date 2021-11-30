@@ -1,11 +1,24 @@
 import React from 'react';
+import Card from './Card'
 import './Ideas.css';
 
-const Ideas = (props) => {
-  const { name } = props;
+const Ideas = ({ideas}) => {
+  const ideaCards = ideas.map(idea => {
+    return (
+      <Card 
+        title={idea.title}
+        description={idea.description}
+        id={idea.id}
+        key={idea.id}
+      />
+    )
+  });
+
   return (
-    <h2>Hello, {name}!</h2>
+    <div className='ideas-container'>
+      {ideaCards}
+    </div>
   )
 }
 
-export default Ideas;
+export default Ideas; 
