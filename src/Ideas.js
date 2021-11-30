@@ -1,11 +1,17 @@
 import React from 'react';
+import Card from './Card'
 import './Ideas.css';
 
 const Ideas = (props) => {
   const { name } = props;
+
   return (
-    <h2>Hello, {name}!</h2>
+    <div className='ideas-container'>
+      <Card />
+      <Card />
+      <Card />
+    </div>
   )
 }
 
-export default Ideas;
+export default Ideas; 
