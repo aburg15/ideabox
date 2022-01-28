@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Card from './Card'
 import './Ideas.css';
 
-const Ideas = ({ideas, deleteIdea }) => {
+const Ideas = ({ ideas, deleteIdea }) => {
   const ideaCards = ideas.map(idea => {
     return (
       <Card 
