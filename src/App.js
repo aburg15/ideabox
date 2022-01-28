@@ -12,11 +12,12 @@ class App extends Component {
   }
 
   addIdea = (newIdea) => {
+    // console.log(newIdea)
     this.setState({ ideas: [...this.state.ideas, newIdea]})
   }
 
   deleteIdea = (id) => {
-    console.log(id);
+    // console.log(id);
     const filteredIdeas = this.state.ideas.filter(idea => idea.id !== id);
 
     this.setState({ ideas: filteredIdeas })
